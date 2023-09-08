@@ -16,15 +16,15 @@
     "faucet-localnet": "obelisk faucet --network localnet",
     "faucet-devnet": "obelisk faucet --network devnet",
     "faucet-testnet": "obelisk faucet --network testnet",
-    "worldpublsih-localnet": "obelisk publish --network localnet --configPath obelisk.config.ts",
-    "worldpublsih-devnet": "obelisk publish --network devnet --configPath obelisk.config.ts",
-    "worldpublsih-testnet": "obelisk publish --network testnet --configPath obelisk.config.ts",
-    "worldpublsih-mainnet": "obelisk publish --network mainnet --configPath obelisk.config.ts",
+    "worldpublsih-localnet": "obelisk publish --network localnet --configPath obelisk.config.ts --savePath src/chain/config.ts",
+    "worldpublsih-devnet": "obelisk publish --network devnet --configPath obelisk.config.ts --savePath src/chain/config.ts",
+    "worldpublsih-testnet": "obelisk publish --network testnet --configPath obelisk.config.ts --savePath src/chain/config.ts",
+    "worldpublsih-mainnet": "obelisk publish --network mainnet --configPath obelisk.config.ts --savePath src/chain/config.ts",
     "localnode": "obelisk localnode",
-    "start-template": "node src/scripts/index.js && obelisk faucet --network localnet && obelisk publish --network localnet --configPath obelisk.config.ts"
+    "start-template": "node src/scripts/index.js && obelisk faucet --network localnet && obelisk publish --network localnet --configPath obelisk.config.ts --savePath src/chain/config.ts && next"
   },
   "dependencies": {
-    "@0xobelisk/cli": "^0.0.6",
+    "@0xobelisk/cli": "^0.0.7",
     "@0xobelisk/client": "0.0.9",
     "@0xobelisk/common": "^0.0.2",
     "@mysten/sui.js": "^0.37.1",

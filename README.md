@@ -2,14 +2,10 @@
 ```bash
 
 1 install sui <https://docs.sui.io/build/install>
-
 2 cd quick_start folder 
 3 pnpm install
-4 open new window && npm run localnode
-4 open new window && npm run start-template
-5 set WorldId:<value> to src/chain/config.ts
-6 set PackageId:<value> to src/chain/config.ts
-7 npm run dev
+4 open new window && pnpm run localnode
+5 open new window && pnpm run start-template
 ```
 
 Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
